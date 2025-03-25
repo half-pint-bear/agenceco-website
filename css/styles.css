@@ -18,3 +18,26 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-menu {
+    display: none;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    font-size: inherit;
+}
+
+#menu li {
+    margin: 0 0.1em;
+}
+#logo {
+    color: rgb(37,96,20);
+}
