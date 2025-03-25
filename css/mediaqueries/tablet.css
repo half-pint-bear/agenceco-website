@@ -1,0 +1,5 @@
+@media screen and (width > 480px) and (width <=769px) {
+    h1 {
+      color: blue;
+    }
+  }

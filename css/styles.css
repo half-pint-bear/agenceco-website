@@ -1,0 +1,20 @@
+/** ====================
+Imports 
+=====================**/
+
+/* Media queries */
+@import url("mediaqueries/cellphone.css");
+@import url("mediaqueries/tablet.css");
+@import url("mediaqueries/laptop.css");
+
+/* Font declaration */
+@import url("fonts.css");
+
+/**====================
+End of imports
+=====================*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
