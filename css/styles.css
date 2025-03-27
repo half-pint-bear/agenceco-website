@@ -118,8 +118,16 @@ a {
 }
 
 #services {
+   text-align: center;
+}
+
+.services-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.icon-container {
+    background-color: grey;
 }

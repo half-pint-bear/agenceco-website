@@ -24,7 +24,7 @@
             <nav>
                 <ul id="menu">
                     <li><a href="#">Accueil</a></li>
-                    <li><a href="#staff">Notre équipe</a></li>
+                    <li><a href="#team">Notre équipe</a></li>
                     <li><a href="#services">Nos services</a></li>
                     <li><a href="#feedback">Témoignages</a></li>
                     <li><a href="#contact">Contactez-nous</a></li>
@@ -86,22 +86,33 @@
 
         <section id="services">
             <h1>Nos services</h1>
-            <div>
-                <div class="icon-container">
-                    <img src="assets/img/Vector.jpg"/>
+            <div class="services-container">
+                <div>
+                    <div class="icon-container">
+                        <img src="assets/img/Vector.jpg"/>
+                    </div>
+                    <p>Création de sites web</p>
                 </div>
-                <p>Création de sites web</p>
-            </div>
-            <div>
-                <div class="icon-container">
-                    <img src="assets/img/Vector-1.jpg"/>
+                <div>
+                    <div class="icon-container">
+                        <img src="assets/img/Vector-1.jpg"/>
+                    </div>
+                    <p>Création de sites web</p>
                 </div>
-                <p>Création de sites web</p>
             </div>
         </section>
 
         <section id="contact">
             <h1>Contactez-nous</h1>
+            <form action="#contact" method="GET">
+                <input type="text" name="name" placeholder="Nom" required/>
+                <input type="text" name="category" placeholder="Catégorie" required/>
+                <input type="tel" name="phone" placeholder="Téléphone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" required/>
+                <input type="text" name="city" placeholder="Ville" required/>
+                <input type="email" name="email" placeholder="Email" required/>
+                <textarea placeholder="Message"></textarea>
+                <input type="submit" value="Envoyer"/>
+            </form>
         </section>
 
         <section id="about">
