@@ -84,11 +84,6 @@ header {
     justify-content: center;
 }
 
-.badge {
-    align-self: center;
-    border: 1px solid red;
-}
-
 .img-container {
     display: block;
     margin: 0 auto;
@@ -103,4 +98,16 @@ header {
     display: block;
     object-fit: cover;
     
+}
+
+#feedback {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(24,58,68);
+    color: white;
+}
+
+#feedback h2 {
+    text-align: center;
 }
