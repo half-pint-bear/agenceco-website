@@ -126,7 +126,13 @@ CELLPHONE = @media screen and (width <=480px)
 TABLET = @media screen and (width > 480px) and (width <=769px)
 LAPTOP = @media screen and (width > 769px) and (width <=1025px)
 ======================*/
-@media screen and (width <=480px) {
+
+/*
+MOBILE DEVICES RULES
+Switch from nav item list to burger menu
+Resize img
+*/
+@media screen and (width <=769px) {
     header {
         flex-wrap: wrap;
     }
