@@ -1,18 +1,6 @@
-/** ====================
-Imports 
-=====================**/
-
-/* Media queries */
-@import url("mediaqueries/cellphone.css");
-@import url("mediaqueries/tablet.css");
-@import url("mediaqueries/laptop.css");
-
 /* Font declaration */
 @import url("fonts.css");
 
-/**====================
-End of imports
-=====================*/
 
 html, body {
     margin: 0;
@@ -131,3 +119,47 @@ a {
 .icon-container {
     background-color: grey;
 }
+
+/**===================
+BREAKPOINTS LIST
+CELLPHONE = @media screen and (width <=480px)
+TABLET = @media screen and (width > 480px) and (width <=769px)
+LAPTOP = @media screen and (width > 769px) and (width <=1025px)
+======================*/
+@media screen and (width <=480px) {
+    header {
+        flex-wrap: wrap;
+    }
+    #burger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    #burger-menu span {
+        width: 30px;
+        height: 4px;
+        background: black;
+        margin: 5px;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        background-color: white;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .img-container {
+        width: 100px;
+        height: 100px;
+    }
+    
+  }
