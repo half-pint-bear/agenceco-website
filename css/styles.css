@@ -1,11 +1,29 @@
 /* Font declaration */
-@import url("fonts.css");
+@font-face {
+    font-family: "poppins regular";
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
 
+@font-face {
+    font-family: "poppins thin";
+    src: url(../assets/fonts/Poppins/Poppins-Thin.ttf);
+}
+
+@font-face {
+    font-family: "poppins thin italic";
+    src: url(../assets/fonts/Poppins/Poppins-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: "poppins bold";
+    src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
 
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: "poppins regular";
 }
 
 header {
@@ -320,7 +338,6 @@ footer {
 
 #top {
     background-color: rgb(21,50,59);
-    display: flex;
 }
 
 #infos {
@@ -333,6 +350,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 1em;
 }
 
 i {
@@ -341,8 +359,6 @@ i {
 
 #bottom {
     background-color: rgb(12,34,39);
-    display: flex;
-    justify-content: space-around;
 }
 
 /**===================
