@@ -364,6 +364,20 @@ footer {
 
 #bottom {
     background-color: rgb(12,34,39);
+    height: 100px;
+    align-items: center;
+}
+
+#social {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5em;
+}
+
+#social i {
+    border: 1px solid white;
+    padding: 10%;
+    border-radius: 1em;
 }
 
 /**===================
@@ -489,5 +503,16 @@ Resize img
 
     #top i {
         display: none;;
+    }
+
+    #bottom {
+        font-size: 10px;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    #social {
+        justify-content: center;
     }
   }
