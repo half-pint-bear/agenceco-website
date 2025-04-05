@@ -328,7 +328,8 @@ iframe {
 }
 
 .slider-container {
-
+    width: 80%;
+    align-self: center;
 }
 
 .slides-wrapper {
@@ -342,21 +343,34 @@ iframe {
 
 .fade {
     animation-name: fade;
-    animation: 1s;
+    animation-duration: 1s;
 }
 .pic {
     width: 100%;
     height: 450px;
     object-fit: cover;
     object-position: center;
+    border-radius: 1em;
 }
 
-.prev {
-
+#slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
 }
 
-.next {
 
+#slider-buttons > a {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.chevron:hover {
+    color: white;
+    background-color: black;
 }
 
 footer {
