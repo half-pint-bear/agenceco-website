@@ -6,6 +6,11 @@ Font imports */
 }
 
 @font-face {
+    font-family: "poppins light";
+    src: url(../assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
     font-family: "poppins thin";
     src: url(../assets/fonts/Poppins/Poppins-Thin.ttf);
 }
@@ -37,6 +42,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    box-sizing: border-box;
     font-family: "poppins regular";
 }
 
@@ -115,13 +121,21 @@ a {
 }
 
 #team {
+    width: 80%;
+    margin: auto;
     text-align: center;
+    padding-bottom: 5%;
 }
 
-#team > h1 {
+#team > h2 {
     color: green;
     font-size: 2em;
 }
+
+#team > p {
+    font-size: 1.5em;
+}
+
 #staff {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -133,6 +147,7 @@ a {
 .badge > h2 {
     font-family: "poppins regular";
 }
+
 .img-container {
     display: block;
     margin: 0 auto;
@@ -154,6 +169,7 @@ a {
     justify-content: space-around;
     background-color: rgb(24,58,68);
     color: white;
+    padding: 2%;
 }
 
 #feedback h2 {
@@ -162,12 +178,18 @@ a {
     font-family: "poppins semibold";
 }
 
+.kpi {
+    line-height: 20%;
+}
+
 #services {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     color: green;
+    width: 70%;
+    margin: auto;
 }
 
 .services-container {
@@ -176,19 +198,19 @@ a {
     justify-content: space-around;
     color: black;
     font-family: "poppins semibold";
+    padding: 5%;
 }
-
 
 .icon-container {
     background-color: rgb(244,246,245);
     border-radius: 1em;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    align-content: center;
 }
 
 .icon-container > img {
     margin: 15%;
-    transform: scale(0.6);
 }
 
 #contact {
@@ -197,9 +219,10 @@ a {
     color: white;
     font-family: "poppins regular";
     width: auto;
+    padding-top: 2%;
 }
 
-#contact > h1 {
+#contact > h2 {
     color: rgb(217,243,86);
 }
 
@@ -210,9 +233,13 @@ form {
         "phone city"
         "email email"
         "message message"
+        "message message"
+        "message message"
+        "message message"
+        "message message"
         "button button";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     gap: 3em;
     padding: 5%;
 }
@@ -294,7 +321,7 @@ input {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 0.1fr);
-    margin-top: 5%;
+    margin-top: 15%;
 }
 
 .about-icon-container {
@@ -320,14 +347,18 @@ input {
     flex-direction: column;
 }
 
-#gallery > h1 {
+#gallery > h2 {
     color: green;
 }
-iframe {
-    width: auto;
+
+#gallery > p {
+    width: 80%;
+    margin: auto;
+    font-size: 1.5em;
 }
 
 .slider-container {
+    margin-top: 2%;
     width: 80%;
     align-self: center;
 }
@@ -391,6 +422,7 @@ footer {
 
 #top p {
     line-height: 0.5em;
+    font-family: 'poppins light';
 }
 #infos {
     display: flex;
@@ -502,12 +534,10 @@ Resize img
         flex-direction: column;
     }
 
-    .service-box {
-        padding: 0 15%;
-        margin: 0 10%;
-    }
     .services-container {
-        display: inline;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
     }
 
     form {
@@ -517,8 +547,12 @@ Resize img
 
     .frm-item {
         align-self: center;
+        width: 90%;
     }
    
+    #frm-txt {
+        height: 100px;
+    }
     #about {
         flex-direction: column;
     }
