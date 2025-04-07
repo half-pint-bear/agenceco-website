@@ -176,6 +176,7 @@ a {
     text-align: center;
     color: rgb(217,243,86);
     font-family: "poppins semibold";
+    font-size: 2em;
 }
 
 .kpi {
@@ -247,6 +248,10 @@ form {
 .frm-item {
     border: none;
     border-bottom: 1px solid white;
+}
+
+.frm-item:focus {
+    outline: none;
 }
 
 /*===============
@@ -399,6 +404,10 @@ input {
     cursor: pointer;
 }
 
+.chevron > i {
+    margin-left: 1px;
+}
+
 .chevron:hover {
     color: white;
     background-color: black;
@@ -412,12 +421,12 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
     color: white;
 }
 
 #top {
     background-color: rgb(21,50,59);
+    justify-content: space-around;
 }
 
 #top p {
@@ -446,12 +455,15 @@ footer {
     background-color: rgb(12,34,39);
     height: 100px;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
 }
 
 #social {
     display: flex;
     justify-content: space-around;
     gap: 1.5em;
+    padding:  0 5%;
 }
 
 #social i {
@@ -481,6 +493,7 @@ Resize img
         display: flex;
         flex-direction: column;
         cursor: pointer;
+        margin-right: 2%;
     }
 
     #burger-menu span {
@@ -505,8 +518,9 @@ Resize img
     }
 
     #intro {
-        top: 90%;
+        top: 75%;
         font-size: 1.5em;
+        margin: auto;
     }
     #staff {
         grid-template-columns: none;
@@ -596,6 +610,11 @@ Resize img
 
     #social {
         justify-content: center;
+    }
+
+    #social > i {
+        font-size: 25px;
+        border-radius: 0.5em;
     }
   }
 
