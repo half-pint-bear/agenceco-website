@@ -476,6 +476,7 @@ footer {
 #top {
     background-color: rgb(21,50,59);
     justify-content: space-around;
+    padding-bottom: 3%;
 }
 
 #top p {
