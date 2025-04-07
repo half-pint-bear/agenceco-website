@@ -38,6 +38,10 @@ Font imports */
 End of font imports
 =====================*/
 
+
+/*=============
+Global styles
+===============*/
 html, body {
     margin: 0;
     padding: 0;
@@ -46,6 +50,9 @@ html, body {
     font-family: "poppins regular";
 }
 
+/*=====================
+Navigation styles
+=====================*/
 header {
     top: 0;
     display: flex;
@@ -89,21 +96,19 @@ a {
 #logo > span  {
     font-family: "poppins semibold italic";
 }
+/*===================
+End of navigation styles
+===================*/
 
+/*====================
+Main title section
+====================*/
 #home {
     padding: 16px;
     margin-top: 50px;
     background: url(../assets/img/rodion-kutsaev-049M_crau5k-unsplash\ 1.jpg) no-repeat center;
     background-size: cover;
     height: 100%;
-}
-
-.txt-white {
-    color: white;
-}
-
-.txt-green {
-    color: rgb(217,243,86);
 }
 
 #intro {
@@ -119,7 +124,13 @@ a {
     font-family: "poppins semibold";
     color: rgb(217,243,86);
 }
+/*=====================
+End of title section
+=====================*/
 
+/*======================
+Team section
+======================*/
 #team {
     width: 80%;
     margin: auto;
@@ -162,7 +173,13 @@ a {
     display: block;
     object-fit: cover;  
 }
+/*======================
+End of team section
+======================*/
 
+/*====================
+Feedback/ KPI section
+=====================*/
 #feedback {
     display: flex;
     flex-direction: row;
@@ -182,7 +199,13 @@ a {
 .kpi {
     line-height: 20%;
 }
+/*=====================
+End of feedback/kpi section
+======================*/
 
+/*======================
+Services section
+======================*/
 #services {
     display: flex;
     flex-direction: column;
@@ -213,7 +236,13 @@ a {
 .icon-container > img {
     margin: 15%;
 }
+/*=======================
+End of services section
+=======================*/
 
+/*=======================
+Contact form section
+========================*/
 #contact {
     background-color: rgb(24,58,68);
     text-align: center;
@@ -295,7 +324,13 @@ input {
     background: transparent;
     color: white;
 }
+/*===========================
+End of contact form section
+===========================*/
 
+/*==========================
+About section
+===========================*/
 #about {
     margin: 5% 0 10% 0;
     display: flex;
@@ -344,7 +379,13 @@ input {
     display: block;
     transform: scale(0.4);
 }
+/*===========================
+End of about section
+===========================*/
 
+/*=========================
+Gallery section
+==========================*/
 #gallery {
     width: 100%;
     text-align: center;
@@ -378,6 +419,7 @@ input {
 }
 
 .fade {
+    /*Calling keyframe */
     animation-name: fade;
     animation-duration: 1s;
 }
@@ -412,7 +454,14 @@ input {
     color: white;
     background-color: black;
 }
+/*==========================
+End of gallery section
+==========================*/
 
+
+/*=========================
+Footer styles
+==========================*/
 footer {
     width: auto;
 }
@@ -471,9 +520,12 @@ footer {
     padding: 10%;
     border-radius: 1em;
 }
+/*====================
+End of footer
+=====================*/
 
 /**===================
-BREAKPOINTS LIST
+BREAKPOINTS LIST REMINDER
 CELLPHONE = @media screen and (width <=480px)
 TABLET = @media screen and (width > 480px) and (width <=769px)
 LAPTOP = @media screen and (width > 769px) and (width <=1025px)
@@ -586,6 +638,11 @@ Resize img
     #about-icons {
         display: flex;
         flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .pic {
+        height: 200px;
     }
 
     #top {
@@ -617,7 +674,13 @@ Resize img
         border-radius: 0.5em;
     }
   }
+/*========================
+End of MOBILE DEVICE RULES
+=========================*/
 
+  /*=================
+  CSS animation
+  ==================*/
   @keyframes fade {
     from {opacity: 0;}
     to {opacity: 1;}
