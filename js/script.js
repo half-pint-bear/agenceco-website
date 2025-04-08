@@ -23,7 +23,7 @@ function changeSlide(n) {
 }
 
 /*
-Select slide on click
+Display current slide
 */
 function showSlides(n) {
     let slides = document.getElementsByClassName("slide");
